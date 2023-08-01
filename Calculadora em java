@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Digite o num1 op num2: ");
+        System.out.println("Digite o numero1, numero2 e o operador a ser utilizado: ");
         Scanner a = new Scanner(System.in);
         int num1 = a.nextInt();
         int num2 = a.nextInt();
