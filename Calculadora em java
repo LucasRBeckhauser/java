@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Digite o num1 op num2: ");
+        Scanner a = new Scanner(System.in);
+        int num1 = a.nextInt();
+        int num2 = a.nextInt();
+        String op = a.next();
+
+        if (op.equals("+")) {
+            int soma = num1 + num2;
+            System.out.println(soma);}
+
+        else if (op.equals("-")) {
+            int dimi = num1 - num2;
+            System.out.println(dimi);}
+
+        else if (op.equals("/")) {
+            double divi = num1/num2;
+            System.out.println(divi);}
+
+        else if (op.equals("*")) {
+            int multi = num1 * num2;
+            System.out.println(multi);}
+
+
+    }
+}
