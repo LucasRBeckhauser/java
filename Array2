@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class exercicio7 {
+    public static void main(String[] args) {
+        int i;
+        ArrayList<String> nome = new ArrayList<>();
+        ArrayList<Double> salario = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        for (i=0; i< 20; i++) {
+            System.out.println("Digite seu nome: ");
+            String x = scanner.nextLine();
+            nome.add(x);}
+
+        for (i=0; i< 20; i++) {
+            System.out.println("Digite o salario da pessoa: ");
+            double y = scanner.nextDouble();
+            salario.add(y * 1.08);}
+
+        for (i=0; i< 20; i++) {
+            System.out.println(" Nome: " + nome.get(i) + "\n" + "Salário com o devido aumento: " + salario.get(i));}
+
+
+
+    }
+}
