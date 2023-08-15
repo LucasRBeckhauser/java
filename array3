@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class exercicio8 {
+    public static void main(String[] args) {
+       int i;
+       int QuantidadeImpar = 0;
+       int QuantidadePar = 0;
+
+        ArrayList<Integer> Vetor = new ArrayList<>();
+        ArrayList<Integer> Par = new ArrayList<>();
+        ArrayList<Integer> Impar = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        for (i=0; i< 6; i++) {
+            System.out.println(" Digite um número: ");
+            int x = scanner.nextInt();
+            Vetor.add(x);
+
+            if (x % 2 != 0) {
+            QuantidadeImpar += 1;
+            Impar.add(x);}
+
+            else if (x % 2 == 0) {
+            QuantidadePar += 1;
+            Par.add(x);}}
+
+        System.out.println("A) Os números pares são" + Par);
+        System.out.println("B) A quantidade de Números pares é " + QuantidadePar);
+        System.out.println("C) Os números impares são " + Impar);
+        System.out.println("D) A quantidade de Números ímpares é " + QuantidadeImpar);
+
+    }
+}
