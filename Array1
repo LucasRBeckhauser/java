@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class exercicio {
+    public static void main(String[] args) {
+        int i;
+        ArrayList<Integer> Vetor = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> Vetor1 = new ArrayList<>();
+
+
+        for (i=0; i< 5; i++) {
+            System.out.println("Digite um número: ");
+            int x = scanner.nextInt();
+            Vetor.add(x);}
+
+        for (i = 4; i >= 0; i --) {
+        Vetor1.add(Vetor.get(i));
+        }
+
+        System.out.println(Vetor);
+        System.out.println(Vetor1);
+
+    }
+}
